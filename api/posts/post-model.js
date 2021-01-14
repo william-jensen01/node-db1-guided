@@ -12,7 +12,9 @@ function get() {
   // SELECT * FROM posts;
   // return db('posts')
   // SELECT id, title, contents FROM posts;
-  return db().from('posts').select('id as p_id', 'title', 'contents')
+  return db()
+    .from('posts')
+    .select('id as p_id', 'title', 'contents')
 }
 
 function getById() {
