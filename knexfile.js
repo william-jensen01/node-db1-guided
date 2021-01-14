@@ -9,7 +9,7 @@ module.exports = {
     migrations: { // files where we evolve the database step by step over time
       directory: './data/migrations',
     },
-    seeds: {
+    seeds: { // mock data to populate our dev db
       directory: './data/seeds',
     },
   },
@@ -22,9 +22,6 @@ module.exports = {
     useNullAsDefault: true,
     migrations: {
       directory: './data/migrations',
-    },
-    seeds: {
-      directory: './data/seeds',
     },
   }
 };
