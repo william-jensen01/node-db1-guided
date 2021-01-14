@@ -10,7 +10,7 @@ module.exports = {
 
 function get() {
   // SELECT * FROM posts;
-  return Promise.resolve('get wired')
+  return db('posts')
 }
 
 function getById() {
