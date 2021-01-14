@@ -17,7 +17,7 @@ function get() {
     .select('id as post_id', 'title', 'contents')
 }
 
-function getById() {
+function getById(id) {
   return Promise.resolve('getById wired')
 }
 
