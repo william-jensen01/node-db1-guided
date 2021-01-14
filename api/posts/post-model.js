@@ -25,7 +25,7 @@ function getById(id) {
 
 function create(post) {
   // INSERT INTO posts (title, contents) VALUES ('foo', 'bar');
-  return db('posts')
+  return db('posts').insert(post)
 }
 
 function update() {
