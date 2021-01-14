@@ -11,6 +11,15 @@ router.get('/', async (req, res, next) => {
     next(err)
   }
 })
+router.get('/', async (req, res, next) => {
+  Post.get()
+    .then(data => {})
+    res.json(data)
+  try {
+  } catch (err) {
+    next(err)
+  }
+})
 
 router.get('/:id', checkId, async (req, res, next) => {
   try {
