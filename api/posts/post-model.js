@@ -26,6 +26,9 @@ function getById(id) {
 function create(post) {
   // INSERT INTO posts (title, contents) VALUES ('foo', 'bar');
   return db('posts').insert(post)
+    .then(([id]) => {
+      return getById(id)
+    })
 }
 
 function update() {
