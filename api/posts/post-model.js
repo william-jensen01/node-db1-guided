@@ -19,7 +19,7 @@ function get() {
 
 function getById(id) {
   // SELECT * FROM posts WHERE id = 1;
-  // return db('posts').where({ id })
+  // return db('posts').where({ id, foo: 'bar' })
   return db('posts').where('id', id).first()
 }
 
