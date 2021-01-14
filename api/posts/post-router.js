@@ -30,7 +30,7 @@ router.post('/', checkPayload, async (req, res, next) => {
   }
 })
 
-router.put('/:id', checkId, async (req, res,next ) => {
+router.put('/:id', checkId, checkPayload, async (req, res,next ) => {
   try {
     const data = await Post.update()
     res.json(data)
