@@ -18,6 +18,8 @@ function get() {
 }
 
 function getById(id) {
+  // SELECT * FROM posts
+  // WHERE id = 1;
   return Promise.resolve('getById wired')
 }
 
