@@ -11,7 +11,7 @@ server.use("/api/posts", PostRouter)
 server.get("/", (req, res) => {
   res.status(200).json({
     api: "down",
-    environment: process.env.NODE_ENV,
+    environment: process.env.FOO,
   })
 })
 
