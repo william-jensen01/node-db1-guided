@@ -9,7 +9,7 @@ server.use(express.json())
 server.use("/api/posts", PostRouter)
 
 server.get("/", (req, res) => {
-  res.status(200).json({ api: "up", env: process.env.NODE_ENV })
+  res.status(200).json({ api: "down", environment: process.env.NODE_ENV })
 })
 
 module.exports = server
