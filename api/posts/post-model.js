@@ -24,7 +24,7 @@ function getById(id) {
 }
 
 function create(post) {
-  // INSERT INTO posts (title, contents) 
+  // INSERT INTO posts (title, contents) VALUES ('foo', 'bar');
   return Promise.resolve('create wired')
 }
 
