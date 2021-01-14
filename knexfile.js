@@ -3,10 +3,10 @@ module.exports = {
   development: {
     client: 'sqlite3',
     connection: {
-      filename: './data/posts.db3',
+      filename: './data/posts.db3', // sqlite3 specific
     },
-    useNullAsDefault: true,
-    migrations: {
+    useNullAsDefault: true, // sqlite3 specific
+    migrations: { // files where we evolve the database step by step over time
       directory: './data/migrations',
     },
     seeds: {
