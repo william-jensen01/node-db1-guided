@@ -7,6 +7,7 @@ module.exports = {
 }
 
 function get() {
+  // SELECT * FROM posts;
   return Promise.resolve('get wired')
 }
 
