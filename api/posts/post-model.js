@@ -20,7 +20,7 @@ function get() {
 function getById(id) {
   // SELECT * FROM posts WHERE id = 1;
   // return db('posts').where({ id })
-  return db('posts').where('id', id)
+  return db('posts').where('id', id).first()
 }
 
 function create() {
