@@ -14,7 +14,7 @@ function get() {
   // SELECT id, title, contents FROM posts;
   return db()
     .from('posts')
-    .select('id as p_id', 'title', 'contents')
+    .select('id as post_id', 'title', 'contents')
 }
 
 function getById() {
